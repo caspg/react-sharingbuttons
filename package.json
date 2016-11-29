@@ -1,0 +1,17 @@
+{
+  "name": "react-sharingbuttons",
+  "version": "0.0.1",
+  "description": "Lightweight social sharing buttons for React.",
+  "main": "index.js",
+  "author": "Kacper Golinski <kacper.golinski@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "eslint": "^3.11.1",
+    "eslint-loader": "^1.6.1",
+    "webpack": "^1.13.3"
+  }
+}
