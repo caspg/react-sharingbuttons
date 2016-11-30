@@ -36,8 +36,8 @@ const SharingButton = (props) => {
   return (
     <Link
       className="resp-sharing-button__link"
-      href="#x"
-      target="_self"
+      href={props.fullUrl}
+      target="_blank"
     >
       <div>
         <span>
@@ -58,6 +58,7 @@ SharingButton.defaultProps = {
 SharingButton.propTypes = {
   icon: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
+  fullUrl: PropTypes.string.isRequired,
   isStyled: PropTypes.bool.isRequired,
   styles: PropTypes.shape({
     backgroundColor: PropTypes.string.isRequired,
