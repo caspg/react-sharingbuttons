@@ -7,14 +7,16 @@ const SharingButton = props => (
     target="_self"
   >
     <div>
-      {props.children}
-      {props.text}
+      {props.icon()}
+      <span>
+        {props.text}
+      </span>
     </div>
   </a>
 )
 
 SharingButton.propTypes = {
-  children: PropTypes.element.isRequired,
+  icon: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
 }
 

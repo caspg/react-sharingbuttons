@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Kacper Golinski <kacper.golinski@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
   "devDependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",

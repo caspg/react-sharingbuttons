@@ -1,9 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import HelloWorld from '../src'
+import Facebook from '../src/buttons/Facebook'
 
 render(
-  <HelloWorld />,
+  <Facebook />,
   document.getElementById('app'),
 )
