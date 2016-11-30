@@ -10,18 +10,27 @@ const SharingButton = (props) => {
     color: #fff;
     margin: 0.5em;
     border-radius: 5px;
-    transition: 25ms ease-out;
+    transition: 50ms ease-out;
     padding: 0.5em 0.75em;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+    background-color: #3b5998;
+
+    &:hover {
+      background-color: #2d4373;
+    }
+
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   `
 
   const Icon = styled(props.icon)`
     width: 1em;
     height: 1em;
+    fill: #fff;
+    stroke-width: 0;
+    vertical-align: top;
   `
 
   const Text = styled('span')`
-    color: green;
+    padding-left: 0.4em;
   `
 
   return (
