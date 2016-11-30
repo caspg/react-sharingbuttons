@@ -9,14 +9,14 @@ const Facebook = (props) => {
     <SharingButton
       icon={FacebookIcon}
       text={text}
-      styled={props.styled}
+      isStyled={props.isStyled}
     />
   )
 }
 
 Facebook.propTypes = {
   text: PropTypes.string,
-  styled: PropTypes.bool,
+  isStyled: PropTypes.bool,
 }
 
 export default Facebook

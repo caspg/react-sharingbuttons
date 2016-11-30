@@ -1,43 +1,53 @@
 import React, { PropTypes } from 'react'
+import getStyled from './utils/getStyled'
 
 const SharingButton = (props) => {
-  let styled
-  if (props.styled) {
-    styled = require('styled-components').default // eslint-disable-line global-require
-  } else {
-    styled = {
-      span: () => p => <span>{p.children}</span>,
-    }
-  }
+  const styled = getStyled(props.isStyled)
 
-  const Text = styled.span`
-    color: red;
+  const Link = styled('a')`
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0.5em;
+    border-radius: 5px;
+    transition: 25ms ease-out;
+    padding: 0.5em 0.75em;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+  `
+
+  const Icon = styled(props.icon)`
+    width: 1em;
+    height: 1em;
+  `
+
+  const Text = styled('span')`
+    color: green;
   `
 
   return (
-    <a
+    <Link
       className="resp-sharing-button__link"
       href="#x"
       target="_self"
     >
       <div>
-        {props.icon()}
+        <Icon />
         <Text>
           {props.text}
         </Text>
       </div>
-    </a>
+    </Link>
   )
 }
 
 SharingButton.defaultProps = {
-  styled: true,
+  isStyled: true,
 }
 
 SharingButton.propTypes = {
   icon: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
-  styled: PropTypes.bool.isRequired,
+  isStyled: PropTypes.bool.isRequired,
 }
 
 export default SharingButton
