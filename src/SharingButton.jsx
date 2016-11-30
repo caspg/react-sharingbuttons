@@ -12,18 +12,18 @@ const SharingButton = (props) => {
     border-radius: 5px;
     transition: 50ms ease-out;
     padding: 0.5em 0.75em;
-    background-color: #3b5998;
+    background-color: ${props.styles.backgroundColor};
 
     &:hover {
-      background-color: #2d4373;
+      background-color: ${props.styles.hoverBackgroundColor};
     }
 
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   `
 
   const Icon = styled(props.icon)`
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
     fill: #fff;
     stroke-width: 0;
     vertical-align: top;
@@ -40,7 +40,9 @@ const SharingButton = (props) => {
       target="_self"
     >
       <div>
-        <Icon />
+        <span>
+          <Icon />
+        </span>
         <Text>
           {props.text}
         </Text>
@@ -57,6 +59,10 @@ SharingButton.propTypes = {
   icon: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
   isStyled: PropTypes.bool.isRequired,
+  styles: PropTypes.shape({
+    backgroundColor: PropTypes.string.isRequired,
+    hoverBackgroundColor: PropTypes.string.isRequired,
+  }),
 }
 
 export default SharingButton

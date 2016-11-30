@@ -10,6 +10,10 @@ const Facebook = (props) => {
       icon={FacebookIcon}
       text={text}
       isStyled={props.isStyled}
+      styles={{
+        backgroundColor: '#3b5998',
+        hoverBackgroundColor: '#2d4373',
+      }}
     />
   )
 }
