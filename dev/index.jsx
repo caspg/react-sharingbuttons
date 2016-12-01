@@ -12,9 +12,15 @@ import {
 } from '../src'
 
 const Buttons = () => {
-  const url = 'google.com'
-  const shareText = 'check this site yo!'
+  const url = 'https://github.com/caspg'
+  const shareText = 'check this site yo'
   const mediaSrc = 'http://placekitten.com/g/200/300'
+
+  const tumblr = {
+    title: 'some-title',
+    caption: 'some-caption',
+    content: 'some-content',
+  }
 
   return (
     <div>
@@ -22,9 +28,16 @@ const Buttons = () => {
       <Facebook url={url} />
       <Google url={url} />
       <Pinterest url={url} shareText={shareText} mediaSrc={mediaSrc} />
-      <Reddit />
-      <Tumblr />
-      <Twitter />
+      <Reddit url={url} />
+
+      <Tumblr
+        url={url}
+        title={tumblr.title}
+        caption={tumblr.caption}
+        content={tumblr.content}
+      />
+
+      <Twitter url={url} shareText={shareText} />
     </div>
   )
 }

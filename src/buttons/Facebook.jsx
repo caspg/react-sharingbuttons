@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react'
 import SharingButton from '../SharingButton'
 import FacebookIcon from '../icons/Facebook'
+import encodeURI from '../utils/encodeURI'
 
 const Facebook = (props) => {
   const text = props.text || 'Facebook'
-  const url = encodeURIComponent(props.url)
+  const url = encodeURI(props.url)
   const fullUrl = `https://facebook.com/sharer/sharer.php?u=${url}`
 
   return (

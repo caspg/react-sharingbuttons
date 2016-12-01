@@ -1,11 +1,12 @@
 import React, { PropTypes } from 'react'
 import SharingButton from '../SharingButton'
 import EmailIcon from '../icons/Email'
+import encodeURI from '../utils/encodeURI'
 
 const Email = (props) => {
   const text = props.text || 'Email'
-  const url = encodeURIComponent(props.url)
-  const subject = encodeURIComponent(props.subject)
+  const url = encodeURI(props.url)
+  const subject = encodeURI(props.subject)
   const fullUrl = `mailto:?subject=${subject}&body=${url}`
 
   return (

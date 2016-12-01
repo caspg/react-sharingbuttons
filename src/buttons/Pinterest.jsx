@@ -1,12 +1,13 @@
 import React, { PropTypes } from 'react'
 import SharingButton from '../SharingButton'
 import PinterestIcon from '../icons/Pinterest'
+import encodeURI from '../utils/encodeURI'
 
 const Pinterest = (props) => {
   const text = props.text || 'Pinterest'
-  const url = encodeURIComponent(props.url)
-  const shareText = encodeURIComponent(props.shareText)
-  const mediaSrc = encodeURIComponent(props.mediaSrc)
+  const url = encodeURI(props.url)
+  const shareText = encodeURI(props.shareText)
+  const mediaSrc = encodeURI(props.mediaSrc)
   const fullUrl = `https://pinterest.com/pin/create/button/?url=${url}&media=${mediaSrc}&description=${shareText}`
 
   return (
