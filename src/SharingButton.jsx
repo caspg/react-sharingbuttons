@@ -17,16 +17,14 @@ const SharingButton = (props) => {
     &:hover {
       background-color: ${props.styles.hoverBackgroundColor};
     }
-
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   `
 
   const Icon = styled(props.icon)`
-    width: 1.2em;
-    height: 1.2em;
     fill: #fff;
     stroke-width: 0;
-    vertical-align: top;
+    width: 1.4em;
+    height: 1.4em;
+    vertical-align: bottom;
   `
 
   const Text = styled('span')`
@@ -39,14 +37,10 @@ const SharingButton = (props) => {
       href={props.fullUrl}
       target="_blank"
     >
-      <div>
-        <span>
-          <Icon />
-        </span>
-        <Text>
-          {props.text}
-        </Text>
-      </div>
+      <Icon />
+      <Text>
+        {props.text}
+      </Text>
     </Link>
   )
 }
