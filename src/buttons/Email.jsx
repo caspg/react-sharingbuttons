@@ -13,7 +13,6 @@ const Email = (props) => {
     <SharingButton
       icon={EmailIcon}
       text={text}
-      isStyled={props.isStyled}
       fullUrl={fullUrl}
       styles={{
         backgroundColor: '#777',
@@ -24,7 +23,6 @@ const Email = (props) => {
 }
 
 Email.propTypes = {
-  isStyled: PropTypes.bool,
   text: PropTypes.string,
   url: PropTypes.string,
   subject: PropTypes.string,

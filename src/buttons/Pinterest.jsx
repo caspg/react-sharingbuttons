@@ -14,7 +14,6 @@ const Pinterest = (props) => {
     <SharingButton
       icon={PinterestIcon}
       text={text}
-      isStyled={props.isStyled}
       fullUrl={fullUrl}
       styles={{
         backgroundColor: '#bd081c',
@@ -29,7 +28,6 @@ Pinterest.propTypes = {
   url: PropTypes.string,
   shareText: PropTypes.string,
   mediaSrc: PropTypes.string,
-  isStyled: PropTypes.bool,
 }
 
 export default Pinterest

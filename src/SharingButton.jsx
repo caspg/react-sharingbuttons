@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import getStyled from './utils/getStyled'
 
 const SharingButton = (props) => {
-  const styled = getStyled(props.isStyled)
+  const styled = getStyled()
 
   const Link = styled('a')`
     display: inline-block;
@@ -51,15 +51,10 @@ const SharingButton = (props) => {
   )
 }
 
-SharingButton.defaultProps = {
-  isStyled: true,
-}
-
 SharingButton.propTypes = {
   icon: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
   fullUrl: PropTypes.string.isRequired,
-  isStyled: PropTypes.bool.isRequired,
   styles: PropTypes.shape({
     backgroundColor: PropTypes.string.isRequired,
     hoverBackgroundColor: PropTypes.string.isRequired,

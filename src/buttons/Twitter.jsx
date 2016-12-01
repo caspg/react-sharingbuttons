@@ -13,7 +13,6 @@ const Twitter = (props) => {
     <SharingButton
       icon={TwitterIcon}
       text={text}
-      isStyled={props.isStyled}
       fullUrl={fullUrl}
       styles={{
         backgroundColor: '#55acee',
@@ -27,7 +26,6 @@ Twitter.propTypes = {
   text: PropTypes.string,
   shareText: PropTypes.string,
   url: PropTypes.string,
-  isStyled: PropTypes.bool,
 }
 
 export default Twitter

@@ -12,7 +12,6 @@ const Reddit = (props) => {
     <SharingButton
       icon={RedditIcon}
       text={text}
-      isStyled={props.isStyled}
       fullUrl={fullUrl}
       styles={{
         backgroundColor: '#5f99cf',
@@ -25,7 +24,6 @@ const Reddit = (props) => {
 Reddit.propTypes = {
   text: PropTypes.string,
   url: PropTypes.string,
-  isStyled: PropTypes.bool,
 }
 
 export default Reddit

@@ -12,7 +12,6 @@ const Facebook = (props) => {
     <SharingButton
       icon={FacebookIcon}
       text={text}
-      isStyled={props.isStyled}
       fullUrl={fullUrl}
       styles={{
         backgroundColor: '#3b5998',
@@ -23,7 +22,6 @@ const Facebook = (props) => {
 }
 
 Facebook.propTypes = {
-  isStyled: PropTypes.bool,
   text: PropTypes.string,
   url: PropTypes.string,
 }

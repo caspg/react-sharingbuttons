@@ -12,7 +12,6 @@ const Google = (props) => {
     <SharingButton
       icon={GoogleIcon}
       text={text}
-      isStyled={props.isStyled}
       fullUrl={fullUrl}
       styles={{
         backgroundColor: '#dd4b39',
@@ -24,7 +23,6 @@ const Google = (props) => {
 
 Google.propTypes = {
   text: PropTypes.string,
-  isStyled: PropTypes.bool,
   url: PropTypes.string,
 }
 

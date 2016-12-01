@@ -16,7 +16,6 @@ const Tumblr = (props) => {
     <SharingButton
       icon={TumblrIcon}
       text={text}
-      isStyled={props.isStyled}
       fullUrl={fullUrl}
       styles={{
         backgroundColor: '#35465C',
@@ -32,7 +31,6 @@ Tumblr.propTypes = {
   title: PropTypes.string,
   caption: PropTypes.string,
   content: PropTypes.string,
-  isStyled: PropTypes.bool,
 }
 
 export default Tumblr

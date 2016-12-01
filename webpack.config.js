@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 
 const devPath = path.join(__dirname, 'dev')
 
@@ -23,4 +24,9 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx'],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.BORING_SHARE_BUTTONS': JSON.stringify(process.env.BORING_SHARE_BUTTONS),
+    }),
+  ],
 }
