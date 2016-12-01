@@ -12,18 +12,17 @@ import { config } from 'config'
 import 'css/main.css'
 import 'css/github.css'
 
+import SharingButtons from '../components/SharingButtons'
+
 const { rhythm, adjustFontSizeTo } = typography
 
 module.exports = React.createClass({
-  propTypes () {
+  propTypes() {
     return {
       children: React.PropTypes.object,
     }
   },
-  render () {
-    const docsActive = includes(this.props.location.pathname, '/docs/')
-    const examplesActive = includes(this.props.location.pathname, '/examples/')
-
+  render() {
     const maxWidth = 720
 
     return (
@@ -75,6 +74,7 @@ module.exports = React.createClass({
             paddingTop: 0,
           }}
         >
+          <SharingButtons />
           {this.props.children}
         </Container>
       </div>

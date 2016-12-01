@@ -9,3 +9,4 @@ docPages = [
   "/docs/the-next-step/",
   "/docs/conclusion/",
 ]
+siteUrl = "https://github.com/caspg"
