@@ -72,6 +72,7 @@ module.exports = React.createClass({
             maxWidth,
             padding: `${rhythm(1)} ${rhythm(3/4)}`,
             paddingTop: 0,
+            paddingBottom: 150,
           }}
         >
           <SharingButtons />

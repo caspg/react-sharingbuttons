@@ -33,12 +33,12 @@ const SharingButton = (props) => {
 
   return (
     <Link
-      className="resp-sharing-button__link"
+      className="react-sharing-button__link"
       href={props.fullUrl}
       target="_blank"
     >
-      <Icon />
-      <Text>
+      <Icon className="react-sharing-button__icon" />
+      <Text className="react-sharing-button__text">
         {props.text}
       </Text>
     </Link>

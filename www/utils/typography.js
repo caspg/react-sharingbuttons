@@ -3,6 +3,7 @@ import CodePlugin from 'typography-plugin-code'
 
 const options = {
   scaleRatio: 1.618,
+  baseFontSize: '18px',
   bodyFontFamily: ['Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
   headerFontFamily: ['Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
   plugins: [

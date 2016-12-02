@@ -1,48 +1,67 @@
-## Sed videt vestem vagatur
+# Instalation
 
-Palato rubentis enim, ora fontes lunaria, ventis iacebant pariter. Illa
-latet
-primae concedimus factis, animo ab nec vagantem praemia sustollit.
-Secunda
-detque ecce, sua vixque fontes *quantam* aede.
+```bash
+  yarn add react-sharingbuttons
+```
 
-## Cuique in nullum futuri
+or alternatively:
 
-Amphitryoniaden sanguine et nefas lactentis iuvencae scit? Venis et dedi
-hoc
-thalamoque palmite fata, nec tot. Procorum super [patre aranea
-passis](http://reddit.com/r/thathappened) et regemque inque dedimus
-[haerent
-lumina ponunt](http://stoneship.org/), Rhodopeius lacertis! Conceperat
-tellus:
-hunc id nymphe en adest evolvere? Auro nescio extemplo triones et
-sceleratus
-queruntur inpavidus ab suos concutit, Ionio aut, de quo cinisque.
+```bash
+npm install --save react-sharingbuttons
+```
+
+# Usage
 
 ```javascript
-// Hot reload typography in development.
-if (process.env.NODE_ENV !== 'production') {
-  typography.injectStyles()
+import { Facebook, Twitter } from 'react-sharingbuttons'
+```
+
+**NOTE**
+If you care about your bundle size, you can import each button separately.
+
+```javascript
+import Facebook from 'react-sharingbuttons/dist/buttons/Facebook'
+import Twitter from 'react-sharingbuttons/dist/buttons/Twitter'
+```
+
+
+```javascript
+const sharingButtons = () => {
+  const url = 'https://github.com/caspg'
+  const shareText = 'Check this site!'
+
+  return (
+    <div>
+      <Facebook url={url} />
+      <Twitter url={url} shareText={shareText} />
+    </div>
+  )
 }
 ```
 
-## Diu fas tractaque Tethyn vidi exigere
+[See the example](https://github.com/caspg)
 
-Aenea inque est flexo armos et bovis! Naides alta vocisque videt fit
-cervum
-elusam Macareus vicisse illis unguibus. Multorumque tumulo
-**praetemptatque
-occidit** ingentique et summas Nili virgo vaticinata facinus positae
-vestes,
-*exstinguere iuvat* Lycaona postquam.
+# Overriding styles
 
-- Multaque in coloque
-- Emicuit errandum
-- Mitior ego verbis interdum occupat feruntur
-- Parili Meleagros fluit et timorem
+Buttons by default are styled with [styled-components](https://github.com/styled-components/styled-components), but you can customize buttons further to meet your needs. For example, following html will be rendered for `Twitter` button:
 
-Gemit petit, cingentia quis carens, duxere es sortem corpora quamvis?
-**Palmis
-visa**, nec deo fuit Amphissos, et sprevere Acmona illa habuissem
-**asper**. Et
-[nemus](http://reddit.com/r/thathappened) Iunone: et deae!
+
+```html
+<a href="https://your.website" class="react-sharing-button__link react-sharing-button__twitter">
+  <svg class="react-sharing-button__icon">...</svg>
+  <span class="react-sharing-button__text">Share me</span>
+</a>
+```
+
+# Available butons and its props
+`text` props is a text which displayed inside button, default to button name.
+
+| name          | props                                                       |
+|---------------|-------------------------------------------------------------|
+| **Email**     | `text`, `url`, `subject`                                    |
+| **Facebook**  | `text`, `url`                                               |
+| **Google**    | `text`, `url`                                               |
+| **Pinterest** | `text`, `url`, `shareText` (a pin description), `mediaSrc`  |
+| **Reddit**    | `text`, `url`                                               |
+| **Twitter**   | `text`, `url`, `shareText` (a tweet text),                  |
+| **Tumblr**    | `text`, `url`, `title`, `caption`, `content`                |
