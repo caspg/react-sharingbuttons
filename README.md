@@ -1,3 +1,7 @@
+# react-sharingbuttons
+
+Lightweight social sharing buttons for React. No tracking. Just fun. Heavily inspired by [sharingbuttons.io](http://sharingbuttons.io)
+
 # Instalation
 
 ```bash
