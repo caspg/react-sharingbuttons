@@ -15,10 +15,6 @@ const Facebook = (props) => {
       icon={FacebookIcon}
       text={text}
       fullUrl={fullUrl}
-      styles={{
-        backgroundColor: '#3b5998',
-        hoverBackgroundColor: '#2d4373',
-      }}
     />
   )
 }

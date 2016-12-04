@@ -1,6 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
 
+import '../src/main.css'
+
 import {
   Email,
   Facebook,

@@ -16,10 +16,6 @@ const Email = (props) => {
       icon={EmailIcon}
       text={text}
       fullUrl={fullUrl}
-      styles={{
-        backgroundColor: '#777',
-        hoverBackgroundColor: '#5e5e5e',
-      }}
     />
   )
 }

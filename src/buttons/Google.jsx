@@ -15,10 +15,6 @@ const Google = (props) => {
       icon={GoogleIcon}
       text={text}
       fullUrl={fullUrl}
-      styles={{
-        backgroundColor: '#dd4b39',
-        hoverBackgroundColor: '#c23321',
-      }}
     />
   )
 }

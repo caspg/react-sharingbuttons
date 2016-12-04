@@ -19,14 +19,10 @@ module.exports = {
         exclude: /node_modules/,
         loaders: ['babel-loader', 'eslint-loader'],
       },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
     ],
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env.BORING_SHARE_BUTTONS': JSON.stringify(process.env.BORING_SHARE_BUTTONS),
-    }),
-  ],
 }

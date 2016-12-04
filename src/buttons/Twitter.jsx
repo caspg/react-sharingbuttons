@@ -16,10 +16,6 @@ const Twitter = (props) => {
       icon={TwitterIcon}
       text={text}
       fullUrl={fullUrl}
-      styles={{
-        backgroundColor: '#55acee',
-        hoverBackgroundColor: '#2795e9',
-      }}
     />
   )
 }

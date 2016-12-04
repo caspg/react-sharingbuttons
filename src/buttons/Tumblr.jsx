@@ -19,10 +19,6 @@ const Tumblr = (props) => {
       icon={TumblrIcon}
       text={text}
       fullUrl={fullUrl}
-      styles={{
-        backgroundColor: '#35465C',
-        hoverBackgroundColor: '#222d3c',
-      }}
     />
   )
 }

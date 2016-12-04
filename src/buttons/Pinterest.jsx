@@ -17,10 +17,6 @@ const Pinterest = (props) => {
       icon={PinterestIcon}
       text={text}
       fullUrl={fullUrl}
-      styles={{
-        backgroundColor: '#bd081c',
-        hoverBackgroundColor: '#8c0615',
-      }}
     />
   )
 }

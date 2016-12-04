@@ -15,10 +15,6 @@ const Reddit = (props) => {
       icon={RedditIcon}
       text={text}
       fullUrl={fullUrl}
-      styles={{
-        backgroundColor: '#5f99cf',
-        hoverBackgroundColor: '#3a80c1',
-      }}
     />
   )
 }
