@@ -1,5 +1,5 @@
 siteTitle="React Sharingbuttons"
-baseColor = "#884499"
+baseColor = "#1B5E20"
 linkPrefix = "/gatsby-starter-documentation"
 docPages = [
   "/docs/",
