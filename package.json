@@ -10,6 +10,17 @@
     "gatsby:develop": "cd www && gatsby develop",
     "build": "babel src --out-dir dist"
   },
+  "homepage": "https://caspg.github.io/react-sharingbuttons",
+  "keywords": [
+    "react",
+    "react-component",
+    "social-buttons",
+    "sharing-buttons"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caspg/react-sharingbuttons.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
