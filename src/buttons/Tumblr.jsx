@@ -14,6 +14,7 @@ const Tumblr = (props) => {
 
   return (
     <SharingButton
+      type="tumblr"
       icon={TumblrIcon}
       text={text}
       fullUrl={fullUrl}

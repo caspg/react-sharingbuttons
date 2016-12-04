@@ -33,7 +33,7 @@ const SharingButton = (props) => {
 
   return (
     <Link
-      className="react-sharing-button__link"
+      className={`react-sharing-button__link react-sharing-button--${props.type}`}
       href={props.fullUrl}
       target="_blank"
     >
@@ -46,6 +46,7 @@ const SharingButton = (props) => {
 }
 
 SharingButton.propTypes = {
+  type: PropTypes.string.isRequired,
   icon: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
   fullUrl: PropTypes.string.isRequired,

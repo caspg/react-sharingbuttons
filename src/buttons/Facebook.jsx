@@ -10,6 +10,7 @@ const Facebook = (props) => {
 
   return (
     <SharingButton
+      type="facebook"
       icon={FacebookIcon}
       text={text}
       fullUrl={fullUrl}

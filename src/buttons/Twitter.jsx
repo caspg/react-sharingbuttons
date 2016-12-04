@@ -11,6 +11,7 @@ const Twitter = (props) => {
 
   return (
     <SharingButton
+      type="twitter"
       icon={TwitterIcon}
       text={text}
       fullUrl={fullUrl}

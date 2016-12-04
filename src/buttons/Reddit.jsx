@@ -10,6 +10,7 @@ const Reddit = (props) => {
 
   return (
     <SharingButton
+      type="reddit"
       icon={RedditIcon}
       text={text}
       fullUrl={fullUrl}

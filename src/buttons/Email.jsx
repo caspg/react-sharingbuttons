@@ -11,6 +11,7 @@ const Email = (props) => {
 
   return (
     <SharingButton
+      type="email"
       icon={EmailIcon}
       text={text}
       fullUrl={fullUrl}

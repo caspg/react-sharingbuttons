@@ -10,6 +10,7 @@ const Google = (props) => {
 
   return (
     <SharingButton
+      type="google"
       icon={GoogleIcon}
       text={text}
       fullUrl={fullUrl}

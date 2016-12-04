@@ -12,6 +12,7 @@ const Pinterest = (props) => {
 
   return (
     <SharingButton
+      type="pinterest"
       icon={PinterestIcon}
       text={text}
       fullUrl={fullUrl}

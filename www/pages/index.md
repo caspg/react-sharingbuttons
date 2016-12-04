@@ -47,7 +47,7 @@ Buttons by default are styled with [styled-components](https://github.com/styled
 
 
 ```html
-<a href="https://your.website" class="react-sharing-button__link react-sharing-button__twitter">
+<a href="https://your.website" class="react-sharing-button__link react-sharing-button--twitter">
   <svg class="react-sharing-button__icon">...</svg>
   <span class="react-sharing-button__text">Share me</span>
 </a>
