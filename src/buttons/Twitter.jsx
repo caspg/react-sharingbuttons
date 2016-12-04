@@ -12,6 +12,7 @@ const Twitter = (props) => {
   return (
     <SharingButton
       type="twitter"
+      onClick={props.onClick}
       icon={TwitterIcon}
       text={text}
       fullUrl={fullUrl}
@@ -27,6 +28,7 @@ Twitter.propTypes = {
   text: PropTypes.string,
   shareText: PropTypes.string,
   url: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default Twitter

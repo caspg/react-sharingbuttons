@@ -11,6 +11,7 @@ const Reddit = (props) => {
   return (
     <SharingButton
       type="reddit"
+      onClick={props.onClick}
       icon={RedditIcon}
       text={text}
       fullUrl={fullUrl}
@@ -25,6 +26,7 @@ const Reddit = (props) => {
 Reddit.propTypes = {
   text: PropTypes.string,
   url: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default Reddit

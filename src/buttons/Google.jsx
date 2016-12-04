@@ -11,6 +11,7 @@ const Google = (props) => {
   return (
     <SharingButton
       type="google"
+      onClick={props.onClick}
       icon={GoogleIcon}
       text={text}
       fullUrl={fullUrl}
@@ -25,6 +26,7 @@ const Google = (props) => {
 Google.propTypes = {
   text: PropTypes.string,
   url: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default Google

@@ -11,6 +11,7 @@ const Facebook = (props) => {
   return (
     <SharingButton
       type="facebook"
+      onClick={props.onClick}
       icon={FacebookIcon}
       text={text}
       fullUrl={fullUrl}
@@ -25,6 +26,7 @@ const Facebook = (props) => {
 Facebook.propTypes = {
   text: PropTypes.string,
   url: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default Facebook

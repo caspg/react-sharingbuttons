@@ -36,6 +36,7 @@ const SharingButton = (props) => {
       className={`react-sharing-button__link react-sharing-button--${props.type}`}
       href={props.fullUrl}
       target="_blank"
+      onClick={props.onClick}
     >
       <Icon className="react-sharing-button__icon" />
       <Text className="react-sharing-button__text">
@@ -54,6 +55,7 @@ SharingButton.propTypes = {
     backgroundColor: PropTypes.string.isRequired,
     hoverBackgroundColor: PropTypes.string.isRequired,
   }),
+  onClick: PropTypes.func,
 }
 
 export default SharingButton

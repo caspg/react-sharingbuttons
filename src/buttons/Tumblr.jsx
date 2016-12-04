@@ -15,6 +15,7 @@ const Tumblr = (props) => {
   return (
     <SharingButton
       type="tumblr"
+      onClick={props.onClick}
       icon={TumblrIcon}
       text={text}
       fullUrl={fullUrl}
@@ -32,6 +33,7 @@ Tumblr.propTypes = {
   title: PropTypes.string,
   caption: PropTypes.string,
   content: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default Tumblr

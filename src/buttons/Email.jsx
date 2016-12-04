@@ -12,6 +12,7 @@ const Email = (props) => {
   return (
     <SharingButton
       type="email"
+      onClick={props.onClick}
       icon={EmailIcon}
       text={text}
       fullUrl={fullUrl}
@@ -27,6 +28,7 @@ Email.propTypes = {
   text: PropTypes.string,
   url: PropTypes.string,
   subject: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default Email

@@ -13,6 +13,7 @@ const Pinterest = (props) => {
   return (
     <SharingButton
       type="pinterest"
+      onClick={props.onClick}
       icon={PinterestIcon}
       text={text}
       fullUrl={fullUrl}
@@ -29,6 +30,7 @@ Pinterest.propTypes = {
   url: PropTypes.string,
   shareText: PropTypes.string,
   mediaSrc: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default Pinterest
