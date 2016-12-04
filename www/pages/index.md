@@ -43,7 +43,7 @@ const sharingButtons = () => {
 
 # Overriding styles
 
-Buttons by default are styled with [styled-components](https://github.com/styled-components/styled-components), but you can customize buttons further to meet your needs. For example, following html will be rendered for `Twitter` button:
+You can customize buttons further to meet your needs. For example, following html will be rendered for `Twitter` button:
 
 
 ```html
@@ -51,6 +51,20 @@ Buttons by default are styled with [styled-components](https://github.com/styled
   <svg class="react-sharing-button__icon">...</svg>
   <span class="react-sharing-button__text">Share me</span>
 </a>
+```
+
+### styled-components
+
+Buttons by default are styled with [styled-components](https://github.com/styled-components/styled-components). If you don't want to use them, pass `BORING_SHARE_BUTTONS` as environment variable during the build process.
+
+Example Webpack configuration:
+
+```javascript
+plugins: [
+  new webpack.DefinePlugin({
+    'process.env.BORING_SHARE_BUTTONS': JSON.stringify('true'),
+  }),
+],
 ```
 
 # Available butons and its props
