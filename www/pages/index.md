@@ -24,6 +24,11 @@ import Facebook from 'react-sharingbuttons/dist/buttons/Facebook'
 import Twitter from 'react-sharingbuttons/dist/buttons/Twitter'
 ```
 
+Import predefined css:
+
+```javascript
+import 'react-sharingbuttons/dist/main.css'
+```
 
 ```javascript
 const sharingButtons = () => {
@@ -51,20 +56,6 @@ You can customize buttons further to meet your needs. For example, following htm
   <svg class="react-sharing-button__icon">...</svg>
   <span class="react-sharing-button__text">Share me</span>
 </a>
-```
-
-### styled-components
-
-Buttons by default are styled with [styled-components](https://github.com/styled-components/styled-components). If you don't want to use them, pass `BORING_SHARE_BUTTONS` as environment variable during the build process.
-
-Example Webpack configuration:
-
-```javascript
-plugins: [
-  new webpack.DefinePlugin({
-    'process.env.BORING_SHARE_BUTTONS': JSON.stringify('true'),
-  }),
-],
 ```
 
 # Available butons and its props
