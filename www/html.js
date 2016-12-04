@@ -18,7 +18,10 @@ module.exports = React.createClass({
 
     let css
     if (process.env.NODE_ENV === 'production') {
-      css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
+      const appStyle = require('!raw!./public/styles.css')
+      const sharingButtonsStyle = require('!raw!../src/main.css')
+      const style = appStyle.concat(sharingButtonsStyle)
+      css = <style dangerouslySetInnerHTML={{ __html: style }} />
     }
 
     return (
