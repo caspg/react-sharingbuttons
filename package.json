@@ -21,6 +21,9 @@
     "type": "git",
     "url": "https://github.com/caspg/react-sharingbuttons.git"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",

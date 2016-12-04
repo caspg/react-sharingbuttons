@@ -2,7 +2,9 @@
 
 Lightweight social sharing buttons for React. No tracking. Just fun. Heavily inspired by [sharingbuttons.io](http://sharingbuttons.io)
 
-Demo & Docs: https://caspg.github.io/react-sharingbuttons
+# Demo & Docs:
+
+https://caspg.github.io/react-sharingbuttons
 
 # Instalation
 
