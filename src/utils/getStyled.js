@@ -1,14 +1,12 @@
 import { createElement } from 'react'
 
 export default () => {
-  const isUnstyled = process.env.BORING_SHARE_BUTTONS === 'true'
-
-  if (isUnstyled) {
-    return tagName =>
-      () =>
-        props =>
-          createElement(tagName, props, props.children)
+  if (process.env.BORING_SHARE_BUTTONS !== 'true') {
+    return require('styled-components').default // eslint-disable-line global-require
   }
 
-  return require('styled-components').default // eslint-disable-line global-require
+  return tagName =>
+    () =>
+      props =>
+        createElement(tagName, props, props.children)
 }
