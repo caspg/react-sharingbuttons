@@ -22,6 +22,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.7.1",
+    "gatsby": "^0.12.21",
     "react-dom": "^15.4.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
