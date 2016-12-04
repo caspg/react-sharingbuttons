@@ -58,8 +58,8 @@ module.exports = React.createClass({
                   to={prefixLink('/')}
                   style={{
                     textDecoration: 'none',
-                    color: colors.fg,
-                    fontSize: adjustFontSizeTo('25.5px').fontSize,
+                    color: 'white',
+                    fontSize: adjustFontSizeTo('30px').fontSize,
                   }}
                 >
                   {config.siteTitle}

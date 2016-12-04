@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import getStyled from './utils/getStyled'
+import getStyled from '../utils/getStyled'
 
 const SharingButton = (props) => {
   const styled = getStyled()

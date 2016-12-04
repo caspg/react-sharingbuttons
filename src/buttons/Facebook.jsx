@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import SharingButton from '../SharingButton'
+import SharingButton from '../components/SharingButton'
 import FacebookIcon from '../icons/Facebook'
 import encodeURI from '../utils/encodeURI'
 
