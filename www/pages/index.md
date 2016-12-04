@@ -68,9 +68,16 @@ plugins: [
 ```
 
 # Available butons and its props
-`text` props is a text which displayed inside button, default to button name.
 
-| name          | props                                                       |
+**common props:**
+
+* `text` - text which is displayed inside button, default to button name.
+* `onClick` - onClick event passed to `a` tag.
+
+**button specific props:**
+
+
+|               |                                                             |
 |---------------|-------------------------------------------------------------|
 | **Email**     | `text`, `url`, `subject`                                    |
 | **Facebook**  | `text`, `url`                                               |

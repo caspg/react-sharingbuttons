@@ -30,7 +30,9 @@ export default () => {
   return (
     <div>
       <a href={config.siteUrl}>Code on GitHub</a>
-      <p>Lightweight social sharing buttons for React. No tracking. Just fun.</p>
+      <br />
+      <br />
+      <p>Lightweight social sharing buttons for React. No tracking. Just fun. Heavily inspired by <a href="http://sharingbuttons.io">sharingbuttons.io</a></p>
 
       <div style={buttonsWrapperStyles}>
         <Email url={url} subject="nice subject" />

@@ -13,6 +13,7 @@ import 'css/main.css'
 import 'css/github.css'
 
 import SharingButtons from '../components/SharingButtons'
+import Footer from '../components/Footer'
 
 const { rhythm, adjustFontSizeTo } = typography
 
@@ -72,11 +73,11 @@ module.exports = React.createClass({
             maxWidth,
             padding: `${rhythm(1)} ${rhythm(3/4)}`,
             paddingTop: 0,
-            paddingBottom: 150,
           }}
         >
           <SharingButtons />
           {this.props.children}
+          <Footer />
         </Container>
       </div>
     )
