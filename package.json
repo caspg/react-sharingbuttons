@@ -8,7 +8,10 @@
   "scripts": {
     "start": "webpack-dev-server",
     "gatsby:develop": "cd www && gatsby develop",
-    "build": "babel src --out-dir dist"
+    "clean:dist": "rm -rf dist/*",
+    "babel": "babel src --out-dir dist",
+    "css": "cp src/main.css dist/main.css",
+    "build": "npm run clean:dist && npm run babel && npm run css"
   },
   "homepage": "https://caspg.github.io/react-sharingbuttons",
   "keywords": [
