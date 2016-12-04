@@ -1,6 +1,6 @@
 {
   "name": "react-sharingbuttons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Lightweight social sharing buttons for React.",
   "main": "dist/index.js",
   "author": "Kacper Golinski <kacper.golinski@gmail.com>",
