@@ -45,12 +45,13 @@
     "expect": "^1.20.2",
     "gatsby": "^0.12.21",
     "mocha": "^3.2.0",
+    "react": "^15.4.1",
     "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^15.4.1"
   }
 }
