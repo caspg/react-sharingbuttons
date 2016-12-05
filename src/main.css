@@ -14,11 +14,13 @@
   stroke-width: 0;
   width: 1.2em;
   height: 1.2em;
+  line-height: 1.2em;
   vertical-align: bottom;
 }
 
 .react-sharing-button__text {
   padding-left: 0.4em;
+  line-height: 1.2em;
 }
 
 .react-sharing-button--email {
