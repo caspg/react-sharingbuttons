@@ -1,0 +1,9 @@
+{
+  "extends": "../.eslintrc",
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": 0
+  }
+}

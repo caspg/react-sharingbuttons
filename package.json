@@ -11,7 +11,8 @@
     "clean:dist": "rm -rf dist/*",
     "babel": "babel src --out-dir dist",
     "css": "cp src/main.css dist/main.css",
-    "build": "npm run clean:dist && npm run babel && npm run css"
+    "build": "npm run clean:dist && npm run babel && npm run css",
+    "test": "mocha --recursive --compilers coffee:babel-core/register test/"
   },
   "homepage": "https://caspg.github.io/react-sharingbuttons",
   "keywords": [
@@ -34,13 +35,17 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.26.1",
+    "enzyme": "^2.6.0",
     "eslint": "^3.11.1",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.7.1",
+    "expect": "^1.20.2",
     "gatsby": "^0.12.21",
+    "mocha": "^3.2.0",
+    "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"

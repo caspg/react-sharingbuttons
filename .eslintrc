@@ -1,10 +1,11 @@
 {
+  "root": true,
   "extends": "airbnb",
   "env": {
-    "browser": true,
+    "browser": true
   },
   "rules": {
     "semi": 0,
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
-    }
+  }
 }
