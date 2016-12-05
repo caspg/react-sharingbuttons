@@ -6,6 +6,7 @@
   border-radius: 5px;
   transition: 50ms ease-out;
   padding: 0.5em 0.75em;
+  line-height: 1.2em;
 }
 
 .react-sharing-button__icon {

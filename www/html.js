@@ -19,9 +19,7 @@ module.exports = React.createClass({
     let css
     if (process.env.NODE_ENV === 'production') {
       const appStyle = require('!raw!./public/styles.css')
-      const sharingButtonsStyle = require('!raw!../src/main.css')
-      const style = appStyle.concat(sharingButtonsStyle)
-      css = <style dangerouslySetInnerHTML={{ __html: style }} />
+      css = <style dangerouslySetInnerHTML={{ __html: appStyle }} />
     }
 
     return (
@@ -39,28 +37,15 @@ module.exports = React.createClass({
           {css}
           <style
             dangerouslySetInnerHTML={{
+              __html: require('!raw!../src/main.css')
+            }}
+          />
+          <style
+            dangerouslySetInnerHTML={{
               __html:
                 `
                   a {
                     color: ${colors.bg};
-                  }
-                  .ball-0 {
-                    background-image: url(${prefixLink('/docs/some-react-code/0.jpg')});
-                  }
-                  .ball-1 {
-                    background-image: url(${prefixLink('/docs/some-react-code/1.jpg')});
-                  }
-                  .ball-2 {
-                    background-image: url(${prefixLink('/docs/some-react-code/2.jpg')});
-                  }
-                  .ball-3 {
-                    background-image: url(${prefixLink('/docs/some-react-code/3.jpg')});
-                  }
-                  .ball-4 {
-                    background-image: url(${prefixLink('/docs/some-react-code/4.jpg')});
-                  }
-                  .ball-5 {
-                    background-image: url(${prefixLink('/docs/some-react-code/5.jpg')});
                   }
                 `,
             }}
