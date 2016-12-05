@@ -12,7 +12,7 @@
     "babel": "babel src --out-dir dist",
     "css": "cp src/main.css dist/main.css",
     "build": "npm run clean:dist && npm run babel && npm run css",
-    "test": "mocha --recursive --compilers coffee:babel-core/register test/"
+    "test": "mocha --recursive --compilers coffee:babel-core/register test/**/*.test.*"
   },
   "homepage": "https://caspg.github.io/react-sharingbuttons",
   "keywords": [
