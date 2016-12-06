@@ -9,5 +9,5 @@ docPages = [
   "/docs/the-next-step/",
   "/docs/conclusion/",
 ]
-siteUrl = "https://github.com/caspg"
 repoUrl = "https://github.com/caspg/react-sharingbuttons"
+siteUrl = "https://caspg.github.io/react-sharingbuttons"
