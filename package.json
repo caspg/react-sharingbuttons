@@ -1,6 +1,6 @@
 {
   "name": "react-sharingbuttons",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lightweight social sharing buttons for React.",
   "main": "dist/index.js",
   "author": "Kacper Golinski <kacper.golinski@gmail.com>",
@@ -12,6 +12,7 @@
     "babel": "babel src --out-dir dist",
     "css": "cp src/main.css dist/main.css",
     "build": "npm run clean:dist && npm run babel && npm run css",
+    "publish": "npm run build && npm publish",
     "test": "mocha --recursive --compilers coffee:babel-core/register test/**/*.test.*"
   },
   "homepage": "https://caspg.github.io/react-sharingbuttons",
