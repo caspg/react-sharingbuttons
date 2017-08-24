@@ -6,7 +6,7 @@ Lightweight social sharing buttons for React. No tracking. Just fun. Heavily ins
 
 https://caspg.github.io/react-sharingbuttons
 
-# Instalation
+# Installation
 
 ```bash
   yarn add react-sharingbuttons
@@ -66,7 +66,7 @@ You can customize buttons further to meet your needs. For example, following htm
 </a>
 ```
 
-# Available butons and its props
+# Available buttons and its props
 
 **common props:**
 
