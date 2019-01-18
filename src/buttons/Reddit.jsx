@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import SharingButton from '../components/SharingButton'
 import RedditIcon from '../icons/Reddit'
 import encodeURI from '../utils/encodeURI'
