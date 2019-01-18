@@ -45,7 +45,6 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.7.1",
     "expect": "^1.20.2",
-    "gatsby": "^0.12.21",
     "mocha": "^5.2.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
