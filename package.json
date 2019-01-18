@@ -14,6 +14,9 @@
     "build_publish": "npm run build && npm publish",
     "test": "mocha --recursive --compilers coffee:babel-core/register test/**/*.test.*"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "homepage": "https://caspg.github.io/react-sharingbuttons",
   "keywords": [
     "react",
