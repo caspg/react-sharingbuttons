@@ -85,3 +85,5 @@ You can customize buttons further to meet your needs. For example, following htm
 | **Reddit**    | `text`, `url`                                               |
 | **Twitter**   | `text`, `url`, `shareText` (a tweet text),                  |
 | **Tumblr**    | `text`, `url`, `title`, `caption`, `content`                |
+| **WhatsApp**  | `text`, `url`, `message` (message text),                    |
+| **Telegram**  | `text`, `url`, `message` (message text),                    |
