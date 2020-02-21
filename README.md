@@ -84,6 +84,7 @@ You can customize buttons further to meet your needs. For example, following htm
 | **Pinterest** | `text`, `url`, `shareText` (a pin description), `mediaSrc`  |
 | **Reddit**    | `text`, `url`                                               |
 | **Twitter**   | `text`, `url`, `shareText` (a tweet text),                  |
+| **LinkedIn**  | `text`, `url`, `shareText` (a tweet text),                  |
 | **Tumblr**    | `text`, `url`, `title`, `caption`, `content`                |
 | **WhatsApp**  | `text`, `url`, `message` (message text),                    |
 | **Telegram**  | `text`, `url`, `message` (message text),                    |

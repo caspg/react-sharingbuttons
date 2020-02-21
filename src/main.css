@@ -94,3 +94,11 @@
 .react-sharing-button--telegram:hover {
   background-color: #4b97d1
 }
+
+.react-sharing-button--linkedin {
+	background-color: #0077b5
+}
+
+.react-sharing-button--linkedin:hover {
+	background-color: #046293
+}
