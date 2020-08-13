@@ -78,3 +78,27 @@
 .react-sharing-button--twitter:hover {
   background-color: #2795e9;
 }
+
+.react-sharing-button--whatsapp {
+  background-color: #25d366
+}
+
+.react-sharing-button--whatsapp:hover {
+  background-color: #1da851
+}
+
+.react-sharing-button--telegram {
+  background-color: #54a9eb
+}
+
+.react-sharing-button--telegram:hover {
+  background-color: #4b97d1
+}
+
+.react-sharing-button--linkedin {
+	background-color: #0077b5
+}
+
+.react-sharing-button--linkedin:hover {
+	background-color: #046293
+}

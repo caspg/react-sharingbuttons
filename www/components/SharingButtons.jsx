@@ -10,6 +10,8 @@ import {
   Reddit,
   Tumblr,
   Twitter,
+  WhatsApp,
+  Telegram,
 } from '../../src'
 
 export default () => {
@@ -49,6 +51,9 @@ export default () => {
         />
 
         <Twitter url={url} shareText={shareText} />
+
+        <WhatsApp url={url} message={shareText} />
+        <Telegram url={url} message={shareText} />
       </div>
     </div>
   )
